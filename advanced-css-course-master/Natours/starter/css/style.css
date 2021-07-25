@@ -6,3 +6,27 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Latto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+    padding: 2%;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right, hsla(111, 55%, 64%, 0.801),hsla(160, 64%, 43%, 0.801)), url('../img/hero.jpg');
+    background-size: cover; /* whatever the width of the viewport, or the element, it fits the element inside of the box. */
+    clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100% );
+}
