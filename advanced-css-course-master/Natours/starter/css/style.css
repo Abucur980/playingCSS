@@ -53,6 +53,7 @@ body{
 .heading-primary{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .heading-primary-main{
@@ -103,4 +104,30 @@ body{
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all 0.2s ;
+    box-shadow:0 10px 20px hsla(0, 0%, 0%, 0.200);
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow:0 8px 17px hsla(0, 0%, 0%, 0.200);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow:0 5px 10px hsla(0, 0%, 0%, 0.200);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
 }
