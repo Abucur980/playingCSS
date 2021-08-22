@@ -108,3 +108,4 @@ Thumbs.db
 !.editorconfig
 !.phpcs.xml.dist
 !.env.example 
+.DS_Store
