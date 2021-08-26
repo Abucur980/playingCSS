@@ -291,6 +291,59 @@ body {
   width: calc((100% - 6rem) / 2);
 }
 
+.footer {
+  background-color: #000;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.footer__logo-box {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 15rem;
+  height: auto;
+}
+
+.footer__nav {
+  display: inline-block;
+  padding-top: 2rem;
+  border-top: 2px #777 solid;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer__link:hover {
+  color: purple;
+}
+
+.footer__copyright {
+  width: 85%;
+  float: right;
+  display: inline-block;
+  padding-top: 2rem;
+  border-top: 2px #777 solid;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;

@@ -1,0 +1,56 @@
+.footer{
+    background-color: $color-black;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    color: $color-white;
+
+    &__logo-box{
+        text-align: center;
+    }
+
+    &__logo{
+        width: 15rem;
+        height: auto;
+    }
+
+    &__nav{
+        display: inline-block;
+        padding-top: 2rem;
+        border-top: 2px $color-grey-dark solid;
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        display: inline-block; //make the nav items stand side by side
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }  
+
+    &__link{
+
+        &:link, &:visited{
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        &:hover{
+            color: purple;
+        }
+        
+    }
+
+    &__copyright{
+        width: 85%;
+        float: right;
+        display: inline-block;
+        padding-top: 2rem;
+        border-top: 2px $color-grey-dark solid;
+    }
+}
