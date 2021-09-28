@@ -5,3 +5,48 @@
         clear: both;
     }
 }
+
+@mixin absCenter{
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+}
+
+
+// media queries 
+// 0-600
+// 600-900 portrait
+// 900-1200 landscape
+// 1200-1800 normals
+// 1800+ big desktops
+
+@mixin responsiv-phone{
+    @media (max-width:600px){
+        @content; // will be picked up from where you write it when you call the mixin
+    }
+}
+
+
+// breakpoints choices: phone, tablet-p, tablet-l, big-d
+// you need to use ems in media queries
+// 1em = 16px
+
+@mixin responsiv ($breakpoint){
+    
+    @if $breakpoint == phone {
+    @media (max-width:37.5em){ @content; } //600px
+}
+
+    @if $breakpoint == tablet-p {
+    @media (max-width:56.25em){ @content; } //900px
+}
+
+    @if $breakpoint == tablet-l {
+    @media (max-width:75em){ @content; } //1200px
+}
+
+    @if $breakpoint == big-d {
+    @media (min-width:112.5em){ @content; } //1800+
+}
+
+}

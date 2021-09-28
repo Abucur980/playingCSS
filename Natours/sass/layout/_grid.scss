@@ -6,9 +6,17 @@
     max-width: $grid-width;
     margin: 0 auto;
     
+    @include responsiv(tablet-p){
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+
+        @include responsiv(tablet-p){
+            margin-bottom: $gutter-horizontal;
+        }
     }
 
     @include clearfix;
@@ -18,6 +26,16 @@
 
             &:not(:last-child){
                 margin-right: $gutter-horizontal;
+
+                @include responsiv(tablet-p){
+                    margin-right: 0;
+                    margin-bottom: $gutter-horizontal;
+                }
+            }
+
+            @include responsiv(tablet-p){
+                border: 1px dashed black;
+                width: 100% !important;
             }
         }
         
