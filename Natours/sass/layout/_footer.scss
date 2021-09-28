@@ -4,8 +4,16 @@
     font-size: 1.4rem;
     color: $color-white;
 
+    @include responsiv(tablet-p){
+        padding: 7rem 0;
+    }
+
     &__logo-box{
         text-align: center;
+
+        @include responsiv(tablet-p){
+            margin-bottom: 4rem;
+        }
     }
 
     &__logo{
@@ -17,6 +25,11 @@
         display: inline-block;
         padding-top: 2rem;
         border-top: 2px $color-grey-dark solid;
+
+        @include responsiv(tablet-p){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list{
@@ -52,5 +65,10 @@
         display: inline-block;
         padding-top: 2rem;
         border-top: 2px $color-grey-dark solid;
+
+        @include responsiv(tablet-p){
+            width: 100%;
+            text-align: center;
+        }
     }
 }

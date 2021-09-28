@@ -6,6 +6,10 @@
     background-size: cover; /* whatever the width of the viewport, or the element, it fits the element inside of the box. */
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100% );
 
+        @include responsiv(phone){
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100% );
+        }
+
     &__logo-box{
         position: absolute;
         top: 4rem;

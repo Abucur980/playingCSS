@@ -1,0 +1,22 @@
+{
+  "name": "trillo-s",
+  "version": "1.0.0",
+  "description": "initial interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abucur980/playingCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abucur980/playingCSS/issues"
+  },
+  "homepage": "https://github.com/Abucur980/playingCSS#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

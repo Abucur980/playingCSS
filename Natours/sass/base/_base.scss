@@ -8,10 +8,36 @@
 
 html{
     // this defines what 1 rem should be, so this is not typography
-    // 10/16px 0.625
+    // 10px/16px 0.625
+    // 1rem will be 10px
     font-size: 62.5%;
+
+    @include responsiv(big-d){
+        font-size: 100%; //1rem = 12px, 12/16=50%
+    }
+
+    @include responsiv(tablet-l){
+        font-size: 56.25%; //1rem = 9px, 9/16=50%
+    }
+
+    @include responsiv(tablet-p){
+        font-size: 50%; //1rem = 8px, 8/16=50%
+    }
+
+   
+
+   
 }
 
 body{
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include responsiv(tablet-p){
+        padding: 0;
+    }
+
+    @include responsiv(phone){
+        padding: 0;
+    }
 }
