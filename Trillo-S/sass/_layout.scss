@@ -1,0 +1,33 @@
+.container{
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-Grey-light-2);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; // is like inline-middle, vertical center
+
+    height: 7rem;
+    font-size: 1.4rem;
+    background-color: wheat;
+    border-bottom: 2px gray solid;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+background-color: var(--color-Grey-dark-3);
+flex: 0 0 17%;
+}
+
+.important-content{
+background-color: green;
+flex: 1;
+}
