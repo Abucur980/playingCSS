@@ -23,11 +23,17 @@
 }
 
 .sidebar{
-background-color: var(--color-Grey-dark-3);
+background-color: var(--color-Grey-dark-1);
 flex: 0 0 17%;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+// align-items: center;
 }
 
 .important-content{
-background-color: green;
+background-color: #FAF9F6;
+height: 80rem;
 flex: 1;
 }
