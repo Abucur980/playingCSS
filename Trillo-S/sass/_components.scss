@@ -201,3 +201,95 @@
     padding: 2.5rem;
     color: var(--color-Grey-light-4);
 }
+
+////////////////////
+//gallery
+
+.gallery{
+    display: flex;
+
+    &__photo{
+        width: 100%; //always define the hight or width of images in % to keep them fluid
+        display: block;
+    }
+}
+
+////////////////////
+//overview
+
+.overview{
+    display: flex;
+    border-bottom: 2px gray solid;
+    align-items: center;
+
+    &__heading{
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding:1.5rem 3rem;
+    }
+
+    &__stars{
+        display: flex;
+        margin-right: auto; // this is very powerful, use it with flex to move to generate the margin 
+    }
+
+    &__icon-star,
+    &__icon-location{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+        margin-right: .5rem;
+    }
+
+    &__location{
+        display: flex;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    &__rating{
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        align-items: center;
+        background-color:var(--color-primary);
+        color: white;
+        margin-left: 3rem;
+        padding:0 2.25rem;
+    }
+
+    &__rating-count{
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+
+    &__rating-average{
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+}
+
+////////////////////
+//inline btn
+
+.inline-btn{
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: currentColor 1px solid;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+        color: var(--color-Grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
