@@ -319,4 +319,107 @@ body {
   padding: 2.5rem;
   color: var(--color-Grey-light-4);
 }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px gray solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+
+.overview__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+.overview__icon-star, .overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
+  margin-right: .5rem;
+}
+
+.overview__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-primary);
+  color: white;
+  margin-left: 3rem;
+  padding: 0 2.25rem;
+}
+
+.overview__rating-count {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.overview__rating-average {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.inline-btn {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: currentColor 1px solid;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.inline-btn:hover {
+  color: var(--color-Grey-dark-1);
+}
+
+.inline-btn:focus {
+  outline: none;
+}
 /*# sourceMappingURL=main.css.map */
