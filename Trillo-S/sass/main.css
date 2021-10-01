@@ -62,7 +62,7 @@ body {
           align-items: center;
   height: 7rem;
   font-size: 1.4rem;
-  background-color: wheat;
+  background-color: #FAF9F6;
   border-bottom: 2px gray solid;
 }
 
@@ -91,10 +91,34 @@ body {
 
 .important-content {
   background-color: #FAF9F6;
-  height: 80rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.5rem;
+  border-bottom: 2px gray solid;
+}
+
+.descriptions {
+  font-size: 1.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  background-color: white;
+  padding: 3rem;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: thistle;
 }
 
 .logo {
@@ -219,7 +243,7 @@ body {
   height: 1.75rem;
   width: 1.75rem;
   border-radius: 100px;
-  background-color: blue;
+  background-color: var(--color-primary-light);
   color: #fff;
   position: absolute;
   top: 1.5rem;
@@ -421,5 +445,70 @@ body {
 
 .inline-btn:focus {
   outline: none;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 2px gray solid;
+  border-bottom: 2px gray solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: .8rem;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: .8rem;
+  background-color: var(--color-primary);
+  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+          mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-Grey-dark-3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommend__count {
+  margin-right: auto;
+}
+
+.recommend__photo {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #FAF9F6;
+}
+
+.recommend__photo:not(:last-of-type) {
+  margin-right: -1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
