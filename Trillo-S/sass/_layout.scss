@@ -1,10 +1,10 @@
 .container{
-    max-width: 120rem;
+    max-width: 120rem; 
     margin: 8rem auto;
     background-color: var(--color-Grey-light-2);
     box-shadow: var(--shadow-dark);
 
-    min-height: 50rem;
+    min-height: 50rem; 
 }
 
 .header{
@@ -14,7 +14,7 @@
 
     height: 7rem;
     font-size: 1.4rem;
-    background-color: wheat;
+    background-color: #FAF9F6;
     border-bottom: 2px gray solid;
 }
 
@@ -34,6 +34,25 @@ justify-content: space-between;
 
 .important-content{
 background-color: #FAF9F6;
-height: 80rem;
+// height: 80rem;
 flex: 1;
+}
+
+.details{
+    display: flex;
+    padding: 4.5rem;
+    border-bottom: 2px gray solid;
+}
+
+.descriptions{
+    font-size: 1.4rem;
+    flex: 0 0 60%;
+    background-color: white;
+    padding: 3rem;
+    margin-right: 4.5rem;
+}
+
+.user-reviews{
+    flex: 1;
+    background-color: thistle;
 }
