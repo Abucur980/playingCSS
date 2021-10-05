@@ -365,3 +365,61 @@
         }
     }
 }
+
+////////////////////
+// review
+
+.review{
+    background-color: white;
+    box-shadow: 0px 13px 27px -5px rgba(50,50,93,0.25) , 0px 8px 16px -8px rgba(0,0,0,0.3) , 0px -6px 16px -6px rgba(0,0,0,0.025)  ;
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    
+    // align-items: center;
+
+    &__text{
+        margin-bottom:2rem;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+       
+        
+    }
+
+    &__user-photo{
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 1.2rem;
+        border-radius: 50%;
+
+    }
+
+    &__user-box{
+        margin-right: auto;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    }
+
+    &__user-name{
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+    }
+
+    &__user-date{
+        font-size: 1rem;
+    }
+
+    &__user-rating{
+        color: var(--color-primary);
+        font-size: 2.2rem;
+        font-weight: 300;
+    //     display: flex;
+    //    margin-left: auto;
+    }
+}
+
