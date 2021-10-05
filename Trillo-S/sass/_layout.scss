@@ -39,13 +39,14 @@ flex: 1;
 }
 
 .details{
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     border-bottom: 2px gray solid;
 }
 
 .descriptions{
-    font-size: 1.4rem;
+    font-size: inherit;
     flex: 0 0 60%;
     background-color: white;
     padding: 3rem;
@@ -53,6 +54,11 @@ flex: 1;
 }
 
 .user-reviews{
+    font-size: inherit;
     flex: 1;
-    background-color: thistle;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
